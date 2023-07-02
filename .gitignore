@@ -1,0 +1,10 @@
+.vs
+.svn
+.idea
+*/*/Debug
+*/.vs
+*/*/x64
+Binaries
+DerivedDataCache
+Intermediate
+Saved
