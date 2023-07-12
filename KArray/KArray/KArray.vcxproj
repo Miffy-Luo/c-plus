@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="KArray.h" />
+    <ClInclude Include="KList.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="KArray.cpp" />
+    <ClCompile Include="KList.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
