@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KRingBuffer", "KRingBuffer\KRingBuffer.vcxproj", "{338FD006-0AD0-41E8-90E5-5D24FD0CAE9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{338FD006-0AD0-41E8-90E5-5D24FD0CAE9B}.Debug|x64.ActiveCfg = Debug|x64
+		{338FD006-0AD0-41E8-90E5-5D24FD0CAE9B}.Debug|x64.Build.0 = Debug|x64
+		{338FD006-0AD0-41E8-90E5-5D24FD0CAE9B}.Debug|x86.ActiveCfg = Debug|Win32
+		{338FD006-0AD0-41E8-90E5-5D24FD0CAE9B}.Debug|x86.Build.0 = Debug|Win32
+		{338FD006-0AD0-41E8-90E5-5D24FD0CAE9B}.Release|x64.ActiveCfg = Release|x64
+		{338FD006-0AD0-41E8-90E5-5D24FD0CAE9B}.Release|x64.Build.0 = Release|x64
+		{338FD006-0AD0-41E8-90E5-5D24FD0CAE9B}.Release|x86.ActiveCfg = Release|Win32
+		{338FD006-0AD0-41E8-90E5-5D24FD0CAE9B}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5317EE6B-D610-44AC-BAD3-38C93E9228BD}
+	EndGlobalSection
+EndGlobal
