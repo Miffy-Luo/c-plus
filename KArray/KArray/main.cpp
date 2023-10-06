@@ -1,6 +1,4 @@
 #include<iostream>
-#include<vector>
-#include <list>
 #include"KArray.h"
 #include "KList.h"
 using namespace std;

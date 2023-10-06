@@ -41,12 +41,17 @@ void KRingBuffer::write(const int* data, size_t bytes)
 		}
 		else {
 			expandCapacity();
+			write(&data[i], bytes-i);
 		}
+	}
+	if (_size < _capacity / 2) {
+		shrink();
 	}
 }
 
-void KRingBuffer::read(int* data, size_t bytes)
+int* KRingBuffer::read(size_t bytes)
 {
+	int* data = new int[bytes];
 	if (_size < _capacity / 2) {
 		shrink();
 	}
@@ -55,14 +60,16 @@ void KRingBuffer::read(int* data, size_t bytes)
 		data[i] = *read_index;
 		read_index = _data + ((read_index - _data + 1) % _capacity);
 	}
+	return data;
 }
 
 void KRingBuffer::printBuffer()
 {
 	auto temp = _data;
+	cout << "Ring Buffer content is : ";
 	for (size_t i = 0; i < _size; i++)
 	{
-		cout << temp[i] << endl;
+		cout << temp[i] << " ";
 	}
 }
 
@@ -81,7 +88,7 @@ void KRingBuffer::shrink()
 void KRingBuffer::resize(size_t newSize)
 {
 	int* newData = new int[newSize];
-	for (size_t i = 0; i < _size; i++) {
+	for (size_t i = 0; i < newSize; i++) {
 		newData[i] = *(read_index++);
 	}
 	delete[] _data;

@@ -7,7 +7,7 @@ public:
     size_t getSize() const;
     size_t getCapacity() const;
     void write(const int* data, size_t bytes);
-    void read(int* data, size_t bytes);
+    int* read(size_t bytes);
     void printBuffer();
 
 private:
